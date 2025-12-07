@@ -9,7 +9,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     gap: 2.5rem;
-    background: #0b0b0b;
     color: white;
     margin-top: 50px;
 }
@@ -75,4 +74,7 @@
     margin: 10px 0;
     padding-left: 10px;
     border-left: 3px solid goldenrod;
+}
+.feedback{
+    margin: 20px;
 }
