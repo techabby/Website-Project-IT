@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+
+.menu-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.menu-header img {
+    height: 0.5rem;
+    padding: 10px;
+    width: 2rem;
+}
+.menuu{
+    font-size: 3rem;
+    color: #daa520;
+    letter-spacing: 6px;
+}
+
+/* Category Buttons */
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.menu-nav button {
+    padding: 10px 20px;
+    border: 1px solid goldenrod;
+    background: transparent;
+    color: goldenrod;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-nav button:hover {
+    background: goldenrod;
+    color: black;
+}
+
+/* Menu Section */
+.category h2 {
+    color: goldenrod;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Cards Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.menu-card {
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+
+.menu-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-card h3 {
+    margin-top: 10px;
+    color: goldenrod;
+}
+
+.menu-card p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.price {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    background: goldenrod;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
