@@ -9,7 +9,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     gap: 2.5rem;
-    background: #0b0b0b;
     color: white;
     margin-top: 50px;
 }
