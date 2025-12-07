@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+.dashboard {
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 2.5rem;
+    background: #0b0b0b;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Dashboard Boxes */
+.dash-box {
+    background: #111;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(218, 165, 32, 0.2);
+    border: 1px solid rgba(218, 165, 32, 0.25);
+}
+
+.dash-box h2 {
+    color: goldenrod;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+}
+
+/* Reviews */
+.review-card {
+    background: #1a1a1a;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid goldenrod;
+    border-radius: 6px;
+}
+
+.review-card span {
+    display: block;
+    margin-top: 0.5rem;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Best Selling Table */
+.sell-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sell-table th, .sell-table td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(218, 165, 32, 0.2);
+}
+
+.sell-table th {
+    color: goldenrod;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.sell-table img {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+ /* Feedback Section */
+.feedback-list li {
+    margin: 10px 0;
+    padding-left: 10px;
+    border-left: 3px solid goldenrod;
+}
