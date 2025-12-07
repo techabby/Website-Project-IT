@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.wtu {
+    text-align: center;
+    font-family: Miniver, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: .04em;
+    color: goldenrod;
+    margin-bottom: 13px;
+}
+
+.container {
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.content img {
+    height: 0.5rem;
+    padding: 10px;
+    width: 2rem;
+}
+
+.contact {
+    font-size: 3rem;
+    color: #daa520;
+    letter-spacing: 6px;
+}
+
+.sub-container {
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+
+.addresses {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.addresses .container {
+    width: 45%;
+    margin-top: 0;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seprator {
+    width: 200px;
+    height: 50px;
+    background-image: url(../images/seprator.svg);
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* Feedback */
+h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    color: goldenrod;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: goldenrod;
+    margin: 10px auto 0;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 60vw;
+    max-width: 600px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(218, 165, 32, 0.4);
+    box-shadow: 0 0 25px rgba(218, 165, 32, 0.15);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 40px auto;
+
+}
+
+.feedback-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form .main-data {
+    flex-direction: row !important;
+    gap: 20px;
+}
+
+.feedback-form .main-data div {
+    width: 100%;
+}
+
+input {
+    border: 1px solid rgba(218, 165, 32, 0.35);
+    padding: 10px;
+    margin: 5px;
+}
+
+textarea {
+    border: 1px solid rgba(218, 165, 32, 0.35);
+    height: 150px;
+    padding: 10px;
+    margin: 5px;
+}
+
+label {
+    margin: 2px;
+    font-size: 1em;
+}
+
+button {
+    align-self: center;
+    color: goldenrod;
+    font-size: 1.2rem;
+    padding: 12px 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+    margin-top: 10px;
+    font-weight: 600;
+    border: 1px solid rgba(218, 165, 32, 0.35);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(218, 165, 32, 0.6);
+}
