@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.rsv {
+    text-align: center;
+    font-family: Miniver, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: .04em;
+    color: goldenrod;
+    margin-bottom: 13px;
+}
+.container{
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.content img{
+    height: 0.5rem;
+    padding: 10px;
+    width: 2rem;
+}
+.bat{
+    font-size: 3rem;
+    color: goldenrod;
+    letter-spacing: 6px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70vw;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.data div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 1px solid rgba(218, 165, 32, 0.35);
+    padding: 10px;
+    margin: 5px;
+}
+
+select {
+    border: 1px solid rgba(218, 165, 32, 0.35);
+    padding: 10px;
+    margin: 5px;
+}
+
+.persons option:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+textarea {
+    border: 1px solid rgba(218, 165, 32, 0.35);
+    height: 200px;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+label {
+    margin: 2px;
+    font-size: 1em;
+}
+
+button {
+    border: 1px solid rgba(218, 165, 32, 0.35);
+    padding: 20px;
+    width: 20vw;
+    margin: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+}
