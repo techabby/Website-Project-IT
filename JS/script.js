@@ -18,5 +18,11 @@ window.addEventListener('scroll', function () {
 })
 // Open Reservation
 function reservation() {
-    window.location.href = '/pages/reservation.html';
+    window.location.href = 'pages/reservation.html';
 }
+// Menu Page
+function showCategory(cat){
+    document.querySelectorAll('.category').forEach(c => c.style.display = 'none');
+    document.getElementById(cat).style.display = 'block';
+}
+
