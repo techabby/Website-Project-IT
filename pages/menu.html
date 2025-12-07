@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desi Flames | Menu</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="../images/favicon.svg"
+            type="image/x-icon">
+        <!-- Css -->
+        <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/header-footer.css">
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div class="preload" data-preload>
+            <div class="circle"></div>
+            <p class="text">Desi Flames</p>
+        </div>
+        <!-- Header -->
+        <header class="home">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="../images/logo.svg" alt="Desi Flames">
+                </div>
+                <ul class="nav_items nav_links">
+                    <div class="item">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/menu.html">Menu</a></li>
+                        <li><a href="../pages/reviews.html">Reviews</a></li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <!-- Categories Navigation -->
+        <section class="menu-header">
+            <img src="../images/decor.svg" alt>
+            <p class="menuu"> MENU</p>
+            <img src="../images/decor.svg" alt>
+        </section>
+        <div class="menu-nav">
+            <button onclick="showCategory('biryani')">Biryani</button>
+            <button onclick="showCategory('karahi')">Karahi</button>
+            <button onclick="showCategory('bbq')">Steak & BBQ</button>
+            <button onclick="showCategory('sweet')">Sweet Dish</button>
+            <button onclick="showCategory('drinks')">Drinks</button>
+        </div>
+
+        <!-- Menu Items -->
+        <section id="menuItems">
+
+            <!-- Biryani -->
+            <div class="category" id="biryani">
+                <h2>Biryani</h2>
+
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="../images/biryani.jpg">
+                        <h3>Chicken Biryani</h3>
+                        <p>Spicy, aromatic, cooked with authentic spices.</p>
+                        <span class="price">Rs 1000</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="../images/beef-biryani.jpg">
+                        <h3>Beef Biryani</h3>
+                        <p>Rich & flavorful beef cooked in masala.</p>
+                        <span class="price">Rs 1100</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Karahi -->
+            <div class="category" id="karahi" style="display:none;">
+                <h2>Karahi</h2>
+
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="../images/chickenkarhai.jpg">
+                        <h3>Chicken Karahi</h3>
+                        <p>Traditional taste with rich tomatoes & spices.</p>
+                        <span class="price">Rs 1300</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="../images/muttonkarhai.jpg">
+                        <h3>Mutton Karahi</h3>
+                        <p>Slow cooked for the perfect tenderness.</p>
+                        <span class="price">Rs 1700</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stake & BBQ -->
+            <div class="category" id="bbq" style="display:none;">
+                <h2>Stake & BBQ</h2>
+
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="../images/steak.jpg">
+                        <h3>Steak</h3>
+                        <p>Smoky, juicy & grilled to perfection.</p>
+                        <span class="price">Rs 1900</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="../images/malaitikka.jpg">
+                        <h3>Malai Boti</h3>
+                        <p>Creamy marinated chicken pieces.</p>
+                        <span class="price">Rs 1100</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Sweet Dish -->
+            <div class="category" id="sweet" style="display:none;">
+                <h2>Sweet Dish</h2>
+
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="../images/kheer.jpg">
+                        <h3>Kheer</h3>
+                        <p>Creamy, dreamy, and full of taste.</p>
+                        <span class="price">Rs 999</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="../images/halwa.jpg">
+                        <h3>Halwa</h3>
+                        <p>Warm, rich, and irresistibly sweet.</p>
+                        <span class="price">Rs 1100</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="category" id="drinks" style="display:none;">
+                <h2>Drinks</h2>
+
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="../images/chai.jpg">
+                        <h3>Chai</h3>
+                        <span class="price">Rs 250</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="../images/lassi.jpg">
+                        <h3>Lassi</h3>
+                        <span class="price">Rs 250</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="sec footer-container">
+                <div class="footer-col">
+                    <div class="footer-logo logo">
+                        <img src="../images/logo.svg" alt="logo">
+                    </div>
+                    <p class="footer-text">
+                        Let us take you on a tasty tour at the best restaurant
+                        in
+                        Hawkins, where you can indulge in the aroma of
+                        magnificence
+                        and devour the elegance of modern dining with a
+                        combination
+                        of baked feasts.
+                    </p>
+                </div>
+                <div class="seprator"></div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/menu.html">Menu</a></li>
+                        <li><a href="../pages/reviews.html">Our Chefs</a></li>
+                        <li><a
+                                href="../pages/reservation.html">Reservations</a></li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="seprator"></div>
+                <div class="footer-col">
+                    <h4>Address</h4>
+                    <h5>Hawkins</h5>
+                    <p>
+                        <img class="icons" src="../images/location.svg">
+                        Restraunt St.77, Hawkins 0653</p>
+
+                    <h5>Gotham</h5>
+                    <p><img class="icons" src="../images/location.svg">
+                        Block-06, 7753 Restraunt St, Gotham</p>
+
+                </div>
+                <div class="seprator"></div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links footer-contacts">
+                        <li><img src="../images/call.svg" class="icons">+77
+                            006053</li>
+                        <li><img src="../images/mail.svg"
+                                class="icons">desiflames@restraunt.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-line"></div>
+                <p>© 2025 The Desi FLames Restaurant — All Rights Reserved</p>
+            </div>
+        </footer>
+    </body>
+    <script src="../JS/script.js"></script>
+</html>
