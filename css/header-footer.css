@@ -178,7 +178,7 @@ header {
 footer .seprator {
     width: 80px;
     height: 80px;
-    background-image: url(/images/seprator.svg);
+    background-image: url(../images/seprator.svg);
     background-repeat: no-repeat;
     transform: rotate(90deg);
     margin: auto 1rem;
@@ -282,12 +282,14 @@ footer h5 {
     opacity: 0.7;
     font-size: 0.9rem;
 }
-.icons{
+
+.icons {
     height: 15px;
     margin-top: 5px;
     margin-right: 4px;
 }
-.footer-col li{
+
+.footer-col li {
     display: flex;
     align-items: center;
 }
