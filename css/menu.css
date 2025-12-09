@@ -102,3 +102,92 @@ body {
     border-radius: 5px;
     font-weight: bold;
 }
+/* ------------------ Responsive ------------------ */
+
+/* Tablets / Small Laptops */
+@media (max-width: 1024px) {
+    .menuu {
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+    }
+
+    .category h2 {
+        font-size: 1.8rem;
+    }
+
+    .menu-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .menu-card p {
+        font-size: 13px;
+    }
+}
+
+/* Tablets / Medium Screens */
+@media (max-width: 768px) {
+    .menuu {
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+
+    .category h2 {
+        font-size: 1.5rem;
+    }
+
+    .menu-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .menu-card p {
+        font-size: 12px;
+    }
+
+    .menu-nav button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .menu-grid {
+        gap: 20px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .menuu {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    .category h2 {
+        font-size: 1.2rem;
+    }
+
+    .menu-card h3 {
+        font-size: 1rem;
+    }
+
+    .menu-card p {
+        font-size: 11px;
+    }
+
+    .price {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    .menu-nav {
+        gap: 10px;
+    }
+
+    .menu-nav button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
