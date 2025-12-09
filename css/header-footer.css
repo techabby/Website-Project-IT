@@ -92,6 +92,8 @@ body.nav-active {
     -webkit-background-clip: text;
     -webkit-text-stroke: 0.5px rgb(0, 0, 0);
     animation: loadingtext 2s linear infinite;
+    text-align: center;
+    padding: 0 10px;
 }
 
 @keyframes loadingtext {
