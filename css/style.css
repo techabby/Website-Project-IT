@@ -17,7 +17,7 @@ header {
     padding: 2em 0;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     height: 100vh;
     animation: changeBG 20s infinite ease-in-out;
 }
@@ -54,8 +54,10 @@ header {
     left: 50%;
     top: 55%;
     transform: translate(-50%, -50%);
-    position: absolute;
+    position: relative;
     color: #daa520;
+    text-align: center;
+
 }
 
 .heading1 {
@@ -82,6 +84,8 @@ header {
 
 .main_btn {
     display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .btn1:hover {
@@ -261,8 +265,7 @@ header {
     /* Main Section */
     .main {
         width: 90%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        padding-top: 120px;
     }
 
     .heading {
@@ -342,7 +345,7 @@ header {
 
     .main {
         width: 95%;
-        top: 50%;
+        padding-top: 100px;
     }
 
     .heading {
@@ -359,7 +362,6 @@ header {
     }
 
     .main_btn {
-        flex-direction: column;
         gap: 8px;
     }
 
@@ -406,14 +408,13 @@ header {
 @media (max-width: 480px) {
     header {
         height: 60vh;
-        background-position: top;
+        background-size: cover;
+        background-position: center top;
     }
 
     .main {
         width: 90%;
-        top: 45%;
-        padding: 0 10px;
-        transform: translate(-50%, -45%);
+        padding-top: 80px;
     }
 
     .heading {
@@ -429,59 +430,33 @@ header {
         padding: 5px 8px;
     }
 
-    .btn1,
-    .btn2 {
-        font-size: 12px;
-        padding: 4px 8px;
-    }
-
     .main_btn {
         flex-direction: column;
         gap: 5px;
     }
 
+        .about {
+        padding: 10px;
+        gap: 8px;
+    }
+
     .about .data {
-        width: 100%;
-        font-size: 0.75em;
-    }
-
-    .content p {
-        font-size: 1.5em;
-    }
-
-    .about .seprator,
-    .specials .seprator {
-        width: 100px;
-        height: 25px;
-    }
-
-    .profiles,
-    .specials-frame {
-        flex-direction: column;
-        gap: 15px;
+        width: 95%;
+        font-size: 0.7em;
     }
 
     .profile-data,
     .specials-data {
         max-width: 100%;
-        width: 90%;
+        width: 85%;
         flex: 1 1 100%;
-        padding: 10px;
-        margin: 10px;
+        padding: 8px;
+        margin: 8px;
     }
 
     .profiles img,
     .specials-data img {
         max-width: 100%;
         height: auto;
-    }
-
-    .profiles span {
-        font-size: medium;
-    }
-
-    .specials-data p {
-        font-size: 0.7em;
-        letter-spacing: 0.1rem;
     }
 }
