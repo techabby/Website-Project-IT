@@ -301,6 +301,19 @@ footer h5 {
 
 /* ------------------ Small Laptops / Tablets ------------------ */
 @media (max-width: 1024px) {
+    @media (max-width: 1024px) {
+        .circle {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 30px;
+        }
+
+        .preload .text {
+            font-size: calc(1.8rem + 2vw);
+            letter-spacing: 8px;
+        }
+    }
+
     /* Navbar */
     .navbar {
         padding: 1rem 2rem;
@@ -323,7 +336,7 @@ footer h5 {
     }
 
     .nav_items li::before {
-        display: none; /* remove separators */
+        display: none;
     }
 
     .logo img {
@@ -350,6 +363,28 @@ footer h5 {
 
 /* ------------------ Tablets ------------------ */
 @media (max-width: 768px) {
+    .circle {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 25px;
+    }
+
+    .preload .text {
+        font-size: calc(1.5rem + 2vw);
+        letter-spacing: 6px;
+    }
+
+    .circle {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 25px;
+    }
+
+    .preload .text {
+        font-size: calc(1.5rem + 2vw);
+        letter-spacing: 6px;
+    }
+
     /* Navbar */
     .navbar {
         padding: 0.8rem 1.5rem;
@@ -390,6 +425,18 @@ footer h5 {
 
 /* ------------------ Mobile ------------------ */
 @media (max-width: 480px) {
+
+    .circle {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .preload .text {
+        font-size: calc(1.2rem + 3vw);
+        letter-spacing: 4px;
+    }
+
     /* Navbar */
     .navbar {
         padding: 0.5rem 1rem;
