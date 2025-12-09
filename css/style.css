@@ -484,18 +484,4 @@ header {
         font-size: 0.7em;
         letter-spacing: 0.1rem;
     }
-}        letter-spacing: 3px;
-    }
-
-    .footer-text {
-        font-size: 12px;
-    }
-
-    footer ul li {
-        font-size: 12px;
-    }
-
-    footer .seprator {
-        display: none;
-    }
 }
