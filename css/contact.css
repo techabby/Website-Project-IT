@@ -161,3 +161,100 @@ button:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 20px rgba(218, 165, 32, 0.6);
 }
+/* ------------------------------------------ */
+/*               RESPONSIVE CSS               */
+/* ------------------------------------------ */
+
+/* Tablets & small laptops */
+@media (max-width: 992px) {
+    .sub-container {
+        width: 60%;
+    }
+
+    .addresses {
+        gap: 25px;
+    }
+
+    .addresses .container {
+        width: 48%;
+    }
+
+    .contact {
+        font-size: 2.5rem;
+    }
+
+    .feedback-form {
+        width: 80vw;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .addresses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .addresses .container {
+        width: 80%;
+    }
+
+    .sub-container {
+        width: 75%;
+    }
+
+    .contact {
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+
+    .feedback-form .main-data {
+        flex-direction: column !important;
+    }
+
+    .feedback-form {
+        width: 90vw;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .content img {
+        width: 1.5rem;
+        height: 0.4rem;
+        padding: 5px;
+    }
+
+    .contact {
+        font-size: 1.7rem;
+        letter-spacing: 2px;
+    }
+
+    .wtu {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .sub-container {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .feedback-form {
+        padding: 20px;
+        width: 95vw;
+    }
+
+    input,
+    textarea {
+        padding: 8px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 28px;
+    }
+}
