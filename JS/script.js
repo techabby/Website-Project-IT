@@ -25,8 +25,4 @@ function showCategory(cat) {
     document.querySelectorAll('.category').forEach(c => c.style.display = 'none');
     document.getElementById(cat).style.display = 'block';
 }
-// RESERVATION Made
-const msg = document.getElementById('success-msg');
-if (msg) {
-    setTimeout(() => { msg.style.display = 'none'; }, 4000);
-}
+
