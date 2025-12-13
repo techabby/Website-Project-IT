@@ -1,0 +1,143 @@
+<!-- Success Msg -->
+<?php
+    if (isset($_GET['success']) && $_GET['success'] == 1) {
+        echo '<div id="success-msg" class="success-msg">Reservation Successful!</div>';
+    }
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desi Flames | Reservations</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="../images/favicon.svg"
+            type="image/x-icon">
+        <!-- Css -->
+        <link rel="stylesheet" href="../css/reservation.css">
+        <link rel="stylesheet" href="../css/header-footer.css">
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div class="preload" data-preload>
+            <div class="circle"></div>
+            <p class="text">Desi Flames</p>
+        </div>
+        <!-- Header -->
+        <header class="home">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="../images/logo.svg" alt="Desi Flames">
+                </div>
+                <ul class="nav_items nav_links">
+                    <div class="item">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/menu.html">Menu</a></li>
+                        <li><a href="../pages/reviews.html">Reviews</a></li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <!-- Resrvation Section -->
+        <div class="container">
+            <p class="rsv">Reservations</p>
+            <div class="content">
+                <img src="../images/decor.svg" alt="decor">
+                <p class="bat">BOOK A TABLE</p>
+                <img src="../images/decor.svg" alt="decor">
+            </div>
+
+            <!-- Form Start -->
+            <form class="data" action="../php/reservation.php" method="post">
+                <div>
+                    <label for="cn">Your Name</label>
+                    <input type="text" name="costumername" id="cn" required>
+                </div>
+                <div>
+                    <label for="pn">Your Phone</label>
+                    <input type="tel" name="phonenumber" id="pn" required>
+                </div>
+                <div>
+                    <label for="persons">Select Person</label>
+                    <select name="persons" id="persons" required>
+                        <option value="2">2 Person</option>
+                        <option value="4">4 Person</option>
+                        <option value="6">6 Person</option>
+                        <option value="8">8 Person</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="dt">Select Date & Time</label>
+                    <input type="datetime-local" name="datetime" id="dt"
+                        required>
+                </div>
+                <div>
+                    <label for="msg">Your Message (Optional)</label>
+                    <textarea name="message" id="msg"></textarea>
+                </div>
+                <button type="submit">BOOK NOW</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="sec footer-container">
+                <div class="footer-col">
+                    <div class="footer-logo logo">
+                        <img src="../images/logo.svg" alt="logo">
+                    </div>
+                    <p class="footer-text">
+                        Let us take you on a tasty tour at the best restaurant
+                        in
+                        Hawkins, where you can indulge in the aroma of
+                        magnificence
+                        and devour the elegance of modern dining with a
+                        combination
+                        of baked feasts.
+                    </p>
+                </div>
+                <div class="seprator"></div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/menu.html">Menu</a></li>
+                        <li><a href="../pages/reviews.html">Reviews</a></li>
+                        <li><a
+                                href="../pages/reservation.html">Reservations</a></li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="seprator"></div>
+                <div class="footer-col">
+                    <h4>Address</h4>
+                    <h5>Hawkins</h5>
+                    <p>
+                        <img class="icons" src="../images/location.svg">
+                        Restraunt St.77, Hawkins 0653</p>
+
+                    <h5>Gotham</h5>
+                    <p><img class="icons" src="../images/location.svg">
+                        Block-06, 7753 Restraunt St, Gotham</p>
+
+                </div>
+                <div class="seprator"></div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links footer-contacts">
+                        <li><img src="../images/call.svg" class="icons">+77
+                            006053</li>
+                        <li><img src="../images/mail.svg"
+                                class="icons">desiflames@restraunt.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-line"></div>
+                <p>© 2025 The Desi FLames Restaurant — All Rights Reserved</p>
+            </div>
+        </footer>
+    </body>
+    <script src="../JS/script.js"></script>
+</html>
