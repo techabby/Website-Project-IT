@@ -13,7 +13,7 @@ $query = "INSERT INTO reservations
           VALUES ('$name', '$phone', '$persons', '$datetime', '$message')";
 
 if (mysqli_query($conn, $query)) {
-    header("Location: ../pages/reservation.php?success=1");
+    header("Location: ../pages/reservation.html?success=1");
     exit;
 } else {
     echo "Error: Resevation Canceled";
